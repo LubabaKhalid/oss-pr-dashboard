@@ -1,0 +1,9 @@
+{
+  "username": "LubabaKhalid",
+  "title": "Open Source PR Dashboard",
+  "exclude": [
+    "LubabaKhalid/*",
+    "NotescapeAi/*",
+    "soft-track/*"
+  ]
+}

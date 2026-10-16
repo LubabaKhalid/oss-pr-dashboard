@@ -1,0 +1,695 @@
+{
+  "fetchedAt": "2026-10-16T09:31:17Z",
+  "prs": [
+    {
+      "closed": null,
+      "created": "2026-10-13T12:27:12Z",
+      "draft": false,
+      "number": 3859,
+      "repo": "DOMjudge/domjudge",
+      "state": "open",
+      "title": "Don't let the browser restore jury toggle state on reload",
+      "url": "https://github.com/DOMjudge/domjudge/pull/3859"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T12:23:00Z",
+      "draft": false,
+      "number": 3858,
+      "repo": "DOMjudge/domjudge",
+      "state": "open",
+      "title": "Fix double counting of open-to-all contests on jury teams page",
+      "url": "https://github.com/DOMjudge/domjudge/pull/3858"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-09T08:17:10Z",
+      "draft": false,
+      "number": 3782,
+      "repo": "DOMjudge/domjudge",
+      "state": "open",
+      "title": "fix(resolver): log delete event when disabling team",
+      "url": "https://github.com/DOMjudge/domjudge/pull/3782"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-04T09:05:09Z",
+      "draft": false,
+      "number": 7127,
+      "repo": "IBM/mcp-context-forge",
+      "state": "open",
+      "title": "feat(catalog): add Parlor.sh MCP server",
+      "url": "https://github.com/IBM/mcp-context-forge/pull/7127"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-03T20:45:38Z",
+      "draft": false,
+      "number": 7124,
+      "repo": "IBM/mcp-context-forge",
+      "state": "open",
+      "title": "fix(a2a): normalize file parts between protocol versions",
+      "url": "https://github.com/IBM/mcp-context-forge/pull/7124"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-03T18:56:09Z",
+      "draft": false,
+      "number": 7123,
+      "repo": "IBM/mcp-context-forge",
+      "state": "open",
+      "title": "fix(a2a): use hyphenated v0.3 task states",
+      "url": "https://github.com/IBM/mcp-context-forge/pull/7123"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T21:36:10Z",
+      "draft": false,
+      "number": 14113,
+      "repo": "QwenLM/qwen-code",
+      "state": "open",
+      "title": "fix(core): fall back on a 429 that carries an unrecognized provider code",
+      "url": "https://github.com/QwenLM/qwen-code/pull/14113"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T17:24:11Z",
+      "draft": false,
+      "number": 14094,
+      "repo": "QwenLM/qwen-code",
+      "state": "open",
+      "title": "fix(cli): accept a server name in qwen mcp reconnect",
+      "url": "https://github.com/QwenLM/qwen-code/pull/14094"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-01T16:56:06Z",
+      "draft": false,
+      "number": 13169,
+      "repo": "QwenLM/qwen-code",
+      "state": "open",
+      "title": "chore(deps): update vulnerable dependencies",
+      "url": "https://github.com/QwenLM/qwen-code/pull/13169"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T17:04:11Z",
+      "draft": false,
+      "number": 7153,
+      "repo": "canonical/cloud-init",
+      "state": "open",
+      "title": "fix(netplan): do not enable DHCPv6 for ipv6_slaac subnets",
+      "url": "https://github.com/canonical/cloud-init/pull/7153"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T16:50:12Z",
+      "draft": false,
+      "number": 7152,
+      "repo": "canonical/cloud-init",
+      "state": "open",
+      "title": "fix(stages): rewrite invalid cached network-config.json",
+      "url": "https://github.com/canonical/cloud-init/pull/7152"
+    },
+    {
+      "closed": null,
+      "created": "2026-09-10T17:40:53Z",
+      "draft": false,
+      "number": 7084,
+      "repo": "canonical/cloud-init",
+      "state": "open",
+      "title": "feat(nocloud): support platform variables in seed URLs",
+      "url": "https://github.com/canonical/cloud-init/pull/7084"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-16T08:24:13Z",
+      "draft": false,
+      "number": 19307,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "Storage: Check ISO and tarball import target before upload",
+      "url": "https://github.com/canonical/lxd/pull/19307"
+    },
+    {
+      "closed": "2026-10-15T19:23:14Z",
+      "created": "2026-10-15T18:13:26Z",
+      "draft": false,
+      "number": 19303,
+      "repo": "canonical/lxd",
+      "state": "merged",
+      "title": "snap/lvm: Store metadata archives and backups under SNAP_COMMON (stable-6)",
+      "url": "https://github.com/canonical/lxd/pull/19303"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-15T17:48:33Z",
+      "draft": false,
+      "number": 19302,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "Instance: Mount VM volume when accessing UEFI vars while stopped",
+      "url": "https://github.com/canonical/lxd/pull/19302"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-15T17:48:31Z",
+      "draft": false,
+      "number": 19301,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "Resources: Skip GPUs whose device is gone",
+      "url": "https://github.com/canonical/lxd/pull/19301"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T14:53:31Z",
+      "draft": false,
+      "number": 19275,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "Storage: Return concise error when backup unpack runs out of space",
+      "url": "https://github.com/canonical/lxd/pull/19275"
+    },
+    {
+      "closed": "2026-10-15T17:34:48Z",
+      "created": "2026-10-13T14:48:19Z",
+      "draft": false,
+      "number": 19274,
+      "repo": "canonical/lxd",
+      "state": "merged",
+      "title": "snap/lvm: Store metadata archives and backups under SNAP_COMMON",
+      "url": "https://github.com/canonical/lxd/pull/19274"
+    },
+    {
+      "closed": "2026-10-14T21:57:53Z",
+      "created": "2026-10-13T14:22:29Z",
+      "draft": false,
+      "number": 19272,
+      "repo": "canonical/lxd",
+      "state": "merged",
+      "title": "Metrics: Report `lxd_cpu_effective_total` for VMs",
+      "url": "https://github.com/canonical/lxd/pull/19272"
+    },
+    {
+      "closed": "2026-10-13T14:22:36Z",
+      "created": "2026-10-13T14:18:52Z",
+      "draft": false,
+      "number": 19271,
+      "repo": "canonical/lxd",
+      "state": "closed",
+      "title": "Metrics: Report `lxd_cpu_effective_total` for VMs",
+      "url": "https://github.com/canonical/lxd/pull/19271"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-14T13:53:42Z",
+      "draft": false,
+      "number": 5422,
+      "repo": "canonical/multipass",
+      "state": "open",
+      "title": "[qemu] Tolerate unreadable images on load",
+      "url": "https://github.com/canonical/multipass/pull/5422"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-14T13:52:58Z",
+      "draft": false,
+      "number": 5421,
+      "repo": "canonical/multipass",
+      "state": "open",
+      "title": "[qemu] Handle tap device setup failures",
+      "url": "https://github.com/canonical/multipass/pull/5421"
+    },
+    {
+      "closed": "2026-10-14T22:31:44Z",
+      "created": "2026-10-14T13:52:00Z",
+      "draft": false,
+      "number": 5420,
+      "repo": "canonical/multipass",
+      "state": "closed",
+      "title": "[daemon] Add driver warning to snapshot/restore",
+      "url": "https://github.com/canonical/multipass/pull/5420"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T16:36:01Z",
+      "draft": false,
+      "number": 5411,
+      "repo": "canonical/multipass",
+      "state": "open",
+      "title": "[daemon] Separate errors when starting instances",
+      "url": "https://github.com/canonical/multipass/pull/5411"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-01T17:50:40Z",
+      "draft": false,
+      "number": 5345,
+      "repo": "canonical/multipass",
+      "state": "open",
+      "title": "fix: print update notice to stderr",
+      "url": "https://github.com/canonical/multipass/pull/5345"
+    },
+    {
+      "closed": "2026-10-14T09:23:19Z",
+      "created": "2026-09-30T15:02:29Z",
+      "draft": false,
+      "number": 5339,
+      "repo": "canonical/multipass",
+      "state": "merged",
+      "title": "fix(hcs): enable Hyper-V time synchronization",
+      "url": "https://github.com/canonical/multipass/pull/5339"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-07T15:35:06Z",
+      "draft": false,
+      "number": 6477,
+      "repo": "canonical/snapcraft",
+      "state": "open",
+      "title": "feat: add snapd-info project key",
+      "url": "https://github.com/canonical/snapcraft/pull/6477"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-16T06:43:27Z",
+      "draft": false,
+      "number": 4864,
+      "repo": "docling-project/docling",
+      "state": "open",
+      "title": "fix(video): keep speaker diarization working without pkg_resources",
+      "url": "https://github.com/docling-project/docling/pull/4864"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-16T06:43:21Z",
+      "draft": false,
+      "number": 4863,
+      "repo": "docling-project/docling",
+      "state": "open",
+      "title": "fix(docx,iwork): put a sub-list under the list item above it",
+      "url": "https://github.com/docling-project/docling/pull/4863"
+    },
+    {
+      "closed": "2026-10-16T05:04:46Z",
+      "created": "2026-10-14T14:45:47Z",
+      "draft": false,
+      "number": 4828,
+      "repo": "docling-project/docling",
+      "state": "merged",
+      "title": "fix(email): escape the text of an HTML body only once",
+      "url": "https://github.com/docling-project/docling/pull/4828"
+    },
+    {
+      "closed": "2026-10-16T05:06:10Z",
+      "created": "2026-10-14T14:45:40Z",
+      "draft": false,
+      "number": 4827,
+      "repo": "docling-project/docling",
+      "state": "merged",
+      "title": "fix(asciidoc): don't take a line that starts with an abbreviation for a list item",
+      "url": "https://github.com/docling-project/docling/pull/4827"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-14T14:45:29Z",
+      "draft": false,
+      "number": 4826,
+      "repo": "docling-project/docling",
+      "state": "open",
+      "title": "fix(jats): convert the content of sub-articles",
+      "url": "https://github.com/docling-project/docling/pull/4826"
+    },
+    {
+      "closed": "2026-10-13T16:26:13Z",
+      "created": "2026-10-09T12:43:00Z",
+      "draft": false,
+      "number": 4727,
+      "repo": "docling-project/docling",
+      "state": "merged",
+      "title": "fix(docx): resolve linked style numbering",
+      "url": "https://github.com/docling-project/docling/pull/4727"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-08T18:28:20Z",
+      "draft": false,
+      "number": 4704,
+      "repo": "docling-project/docling",
+      "state": "open",
+      "title": "fix(layout): preserve outer section header for nested same-label clusters",
+      "url": "https://github.com/docling-project/docling/pull/4704"
+    },
+    {
+      "closed": "2026-10-08T21:50:34Z",
+      "created": "2026-10-08T15:15:10Z",
+      "draft": false,
+      "number": 4692,
+      "repo": "docling-project/docling",
+      "state": "closed",
+      "title": "fix(html): handle invalid ordered list start values",
+      "url": "https://github.com/docling-project/docling/pull/4692"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-16T08:53:48Z",
+      "draft": false,
+      "number": 885,
+      "repo": "docling-project/docling-core",
+      "state": "open",
+      "title": "fix(doclang): keep attribute-only custom fields and the element-head meta of tables",
+      "url": "https://github.com/docling-project/docling-core/pull/885"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-16T08:48:24Z",
+      "draft": false,
+      "number": 884,
+      "repo": "docling-project/docling-core",
+      "state": "open",
+      "title": "fix(doclang): don't leak the page-break sentinel when add_page_break is off",
+      "url": "https://github.com/docling-project/docling-core/pull/884"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-16T08:47:40Z",
+      "draft": false,
+      "number": 883,
+      "repo": "docling-project/docling-core",
+      "state": "open",
+      "title": "fix(markdown): hang a sub-list that no item precedes on an empty list item",
+      "url": "https://github.com/docling-project/docling-core/pull/883"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-06T20:39:10Z",
+      "draft": false,
+      "number": 184,
+      "repo": "docling-project/docling-pipelines",
+      "state": "open",
+      "title": "feat(storage): add entity storage operator",
+      "url": "https://github.com/docling-project/docling-pipelines/pull/184"
+    },
+    {
+      "closed": "2026-10-06T21:41:32Z",
+      "created": "2026-10-06T18:34:34Z",
+      "draft": false,
+      "number": 183,
+      "repo": "docling-project/docling-pipelines",
+      "state": "merged",
+      "title": "fix: migrate DCO advisor to workflow_run",
+      "url": "https://github.com/docling-project/docling-pipelines/pull/183"
+    },
+    {
+      "closed": "2026-10-06T17:07:05Z",
+      "created": "2026-10-05T18:23:30Z",
+      "draft": false,
+      "number": 164,
+      "repo": "docling-project/docling-pipelines",
+      "state": "merged",
+      "title": "chore(logging): enforce lazy logger formatting in infrastructure",
+      "url": "https://github.com/docling-project/docling-pipelines/pull/164"
+    },
+    {
+      "closed": "2026-10-05T23:00:05Z",
+      "created": "2026-10-04T11:08:39Z",
+      "draft": false,
+      "number": 141,
+      "repo": "docling-project/docling-pipelines",
+      "state": "merged",
+      "title": "ci: enforce per-PR coverage thresholds",
+      "url": "https://github.com/docling-project/docling-pipelines/pull/141"
+    },
+    {
+      "closed": "2026-10-06T07:51:21Z",
+      "created": "2026-10-04T10:16:55Z",
+      "draft": false,
+      "number": 140,
+      "repo": "docling-project/docling-pipelines",
+      "state": "merged",
+      "title": "perf(chunker): hoist markdown document imports",
+      "url": "https://github.com/docling-project/docling-pipelines/pull/140"
+    },
+    {
+      "closed": null,
+      "created": "2026-09-11T09:06:43Z",
+      "draft": false,
+      "number": 5095,
+      "repo": "google/googletest",
+      "state": "open",
+      "title": "Fix Visual Studio header files for gtest",
+      "url": "https://github.com/google/googletest/pull/5095"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T21:51:42Z",
+      "draft": false,
+      "number": 8742,
+      "repo": "google/guava",
+      "state": "open",
+      "title": "Document that `ThreadFactoryBuilder` requires its backing factory to return non-null threads",
+      "url": "https://github.com/google/guava/pull/8742"
+    },
+    {
+      "closed": "2026-10-14T19:33:32Z",
+      "created": "2026-10-13T21:51:39Z",
+      "draft": false,
+      "number": 8741,
+      "repo": "google/guava",
+      "state": "closed",
+      "title": "Document that `SimpleStatsCounter.snapshot()` may be inconsistent with concurrent updates",
+      "url": "https://github.com/google/guava/pull/8741"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T21:51:36Z",
+      "draft": false,
+      "number": 8740,
+      "repo": "google/guava",
+      "state": "open",
+      "title": "Treat leading and trailing `$` in a class name as part of a top-level class name in `ClassPath`",
+      "url": "https://github.com/google/guava/pull/8740"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T21:19:39Z",
+      "draft": false,
+      "number": 1043,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "html: allow type=\"module\" on scripts",
+      "url": "https://github.com/google/styleguide/pull/1043"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T21:19:36Z",
+      "draft": false,
+      "number": 1042,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "java: say blank Javadoc lines have no trailing whitespace",
+      "url": "https://github.com/google/styleguide/pull/1042"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T21:19:31Z",
+      "draft": false,
+      "number": 1041,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "python: clarify the dictionary alignment example",
+      "url": "https://github.com/google/styleguide/pull/1041"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T17:48:03Z",
+      "draft": false,
+      "number": 1040,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "google-c-style.el: scale expression indent with c-basic-offset",
+      "url": "https://github.com/google/styleguide/pull/1040"
+    },
+    {
+      "closed": "2026-10-14T17:11:35Z",
+      "created": "2026-10-13T17:48:00Z",
+      "draft": false,
+      "number": 1039,
+      "repo": "google/styleguide",
+      "state": "closed",
+      "title": "json: clarify that property names use lower camel case",
+      "url": "https://github.com/google/styleguide/pull/1039"
+    },
+    {
+      "closed": "2026-10-13T20:20:30Z",
+      "created": "2026-10-13T17:47:56Z",
+      "draft": false,
+      "number": 1038,
+      "repo": "google/styleguide",
+      "state": "merged",
+      "title": "vim: fix help tag for the list of built-in functions",
+      "url": "https://github.com/google/styleguide/pull/1038"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-16T08:39:50Z",
+      "draft": false,
+      "number": 43678,
+      "repo": "grpc/grpc",
+      "state": "open",
+      "title": "[Python Otel] Do not hold the census buffer mutex while exporting data",
+      "url": "https://github.com/grpc/grpc/pull/43678"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-16T08:39:45Z",
+      "draft": false,
+      "number": 43677,
+      "repo": "grpc/grpc",
+      "state": "open",
+      "title": "[Python] Migrate grpc.aio off the deprecated asyncio policy API",
+      "url": "https://github.com/grpc/grpc/pull/43677"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T15:53:03Z",
+      "draft": false,
+      "number": 35371,
+      "repo": "open-metadata/OpenMetadata",
+      "state": "open",
+      "title": "Fixes 35036: Trigger tagCategory alerts on Classification changes",
+      "url": "https://github.com/open-metadata/OpenMetadata/pull/35371"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-13T15:14:02Z",
+      "draft": false,
+      "number": 35366,
+      "repo": "open-metadata/OpenMetadata",
+      "state": "open",
+      "title": "Fixes 34856: Parse run_pipeline trigger response as PipelineServiceClientResponse",
+      "url": "https://github.com/open-metadata/OpenMetadata/pull/35366"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-09T06:23:23Z",
+      "draft": false,
+      "number": 34986,
+      "repo": "open-metadata/OpenMetadata",
+      "state": "open",
+      "title": "fix(lineage): avoid freezing on very large graphs",
+      "url": "https://github.com/open-metadata/OpenMetadata/pull/34986"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-14T18:20:48Z",
+      "draft": false,
+      "number": 37848,
+      "repo": "react/react",
+      "state": "open",
+      "title": "[DevTools] Stop polling the backend manager from the content script",
+      "url": "https://github.com/react/react/pull/37848"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-14T18:12:42Z",
+      "draft": false,
+      "number": 37847,
+      "repo": "react/react",
+      "state": "open",
+      "title": "[DevTools] Release host instances deleted from a still-mounted component",
+      "url": "https://github.com/react/react/pull/37847"
+    },
+    {
+      "closed": "2026-10-15T14:40:44Z",
+      "created": "2026-09-22T07:45:46Z",
+      "draft": false,
+      "number": 40,
+      "repo": "ubuntu/ubuntu-lint",
+      "state": "closed",
+      "title": "ubuntu-lint: check unapproved SRU uploads",
+      "url": "https://github.com/ubuntu/ubuntu-lint/pull/40"
+    },
+    {
+      "closed": "2026-10-15T15:27:17Z",
+      "created": "2026-09-21T11:46:48Z",
+      "draft": false,
+      "number": 39,
+      "repo": "ubuntu/ubuntu-lint",
+      "state": "closed",
+      "title": "linters: support native packages in SRU version convention",
+      "url": "https://github.com/ubuntu/ubuntu-lint/pull/39"
+    },
+    {
+      "closed": "2026-10-15T14:36:26Z",
+      "created": "2026-09-21T09:28:51Z",
+      "draft": false,
+      "number": 38,
+      "repo": "ubuntu/ubuntu-lint",
+      "state": "merged",
+      "title": "dput: support source format 1.0 packages",
+      "url": "https://github.com/ubuntu/ubuntu-lint/pull/38"
+    },
+    {
+      "closed": "2026-10-06T15:50:03Z",
+      "created": "2026-10-06T13:41:39Z",
+      "draft": false,
+      "number": 748,
+      "repo": "xberg-io/html-to-markdown",
+      "state": "closed",
+      "title": "Fix/image alt newlines",
+      "url": "https://github.com/xberg-io/html-to-markdown/pull/748"
+    },
+    {
+      "closed": "2026-10-01T22:12:48Z",
+      "created": "2026-10-01T13:07:47Z",
+      "draft": false,
+      "number": 721,
+      "repo": "xberg-io/html-to-markdown",
+      "state": "closed",
+      "title": "fix(wasm): preserve visitor handle ownership",
+      "url": "https://github.com/xberg-io/html-to-markdown/pull/721"
+    },
+    {
+      "closed": "2026-10-01T22:12:47Z",
+      "created": "2026-10-01T11:29:05Z",
+      "draft": false,
+      "number": 720,
+      "repo": "xberg-io/html-to-markdown",
+      "state": "closed",
+      "title": "fix(converter): preserve block separation in table cells",
+      "url": "https://github.com/xberg-io/html-to-markdown/pull/720"
+    },
+    {
+      "closed": "2026-09-30T23:36:28Z",
+      "created": "2026-09-30T19:11:58Z",
+      "draft": false,
+      "number": 703,
+      "repo": "xberg-io/html-to-markdown",
+      "state": "closed",
+      "title": "fix(converter): keep a br on its own source line as a hard break",
+      "url": "https://github.com/xberg-io/html-to-markdown/pull/703"
+    },
+    {
+      "closed": "2026-09-30T23:36:27Z",
+      "created": "2026-09-30T10:11:06Z",
+      "draft": false,
+      "number": 701,
+      "repo": "xberg-io/html-to-markdown",
+      "state": "closed",
+      "title": "Fix/br on own line",
+      "url": "https://github.com/xberg-io/html-to-markdown/pull/701"
+    },
+    {
+      "closed": "2026-09-29T18:32:21Z",
+      "created": "2026-09-29T13:30:50Z",
+      "draft": false,
+      "number": 652,
+      "repo": "xberg-io/html-to-markdown",
+      "state": "closed",
+      "title": "fix(converter): preserve blockquote in task items",
+      "url": "https://github.com/xberg-io/html-to-markdown/pull/652"
+    }
+  ]
+}

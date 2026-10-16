@@ -1,0 +1,278 @@
+{
+  "canonical/cloud-init#7153": {
+    "issue": "When a network interface was set up to get its IPv6 address automatically from the router (a mode called SLAAC), the netplan output also asked for a DHCPv6 address, which it should not do. The other network back-ends already got this right.",
+    "done": "The netplan output now tells the interface to accept router advertisements instead of turning on DHCPv6 for these interfaces, matching the other back-ends."
+  },
+  "canonical/cloud-init#7152": {
+    "issue": "cloud-init saved a copy of the network settings to a cache file and read it back on the next boot. If that file was empty or cut short (for example after a power loss), reading it crashed, and the boot stage stopped before the network was set up.",
+    "done": "A cache file that cannot be read is now treated as if it did not exist: cloud-init logs a warning and writes a fresh copy of the current network settings."
+  },
+  "canonical/cloud-init#7084": {
+    "issue": "NoCloud lets you point at a URL to download setup data, and that URL could include some hardware details, but not whether the machine has Secure Boot, a TPM security chip, or is running as a virtual machine.",
+    "done": "Added three new placeholders for Secure Boot, TPM 2.0, and virtualization that are filled in automatically, so one URL can serve different setups depending on the machine. Includes tests."
+  },
+  "canonical/lxd#19307": {
+    "issue": "When importing an ISO image or tarball as a storage volume, LXD uploaded the whole file first and only then checked whether the target name was valid or already in use, so a bad name was reported only after a possibly multi-gigabyte upload.",
+    "done": "Both the server and the command-line tool now check the target volume name before any data is sent, and reject bad or duplicate names right away with a clear error."
+  },
+  "canonical/lxd#19303": {
+    "issue": "Inside the LXD snap, the LVM storage tool kept its metadata archives and backups in a small temporary filesystem under /etc, which could fill up on hosts with many volumes. This is the same problem fixed in PR 19274 for the main branch.",
+    "done": "Backports that fix to the stable-6 release branch so LVM writes those files to the snap's persistent data folder instead."
+  },
+  "canonical/lxd#19302": {
+    "issue": "On some storage back-ends (like ZFS), a virtual machine's config storage is only attached while the VM runs. Reading or changing UEFI firmware variables on a stopped VM therefore touched an empty folder: changes were silently lost and a leftover file could make deleting the VM fail.",
+    "done": "When the VM is stopped, LXD now temporarily attaches the config storage while reading or writing UEFI variables, the same way it already does when regenerating the firmware state."
+  },
+  "canonical/lxd#19301": {
+    "issue": "Unplugging a USB display adapter could leave behind a broken system link for that graphics card. Reading it failed, which made the whole 'lxc info --resources' command fail instead of just skipping that card.",
+    "done": "Graphics cards whose device entry is gone are now skipped, so the rest of the hardware information still shows. A unit test covers the broken-link case."
+  },
+  "canonical/lxd#19275": {
+    "issue": "When restoring a backup into a storage volume that was too small, the unpacking tool printed an error for every remaining file, and LXD put all of that text into its error message, producing log entries that could be megabytes long and hid the real cause.",
+    "done": "If the unpacking output says the device ran out of space, LXD now keeps only that one message in the error. Other failures are reported as before."
+  },
+  "canonical/lxd#19274": {
+    "issue": "Inside the LXD snap, the LVM storage tool kept its metadata archives and backups under /etc, which is a small in-memory filesystem there. On hosts with many logical volumes this could fill up.",
+    "done": "The snap's LVM settings now point those archive and backup folders to the snap's persistent data area under /var/snap/lxd/common. Hosts using an external LVM are not affected."
+  },
+  "canonical/lxd#19272": {
+    "issue": "The monitoring metric that reports how many CPUs a virtual machine has was always 0 for VMs, because neither of the two code paths that gather VM statistics filled in that number, even though they already collected per-CPU data.",
+    "done": "Both the in-guest agent and the fallback QEMU path now set the CPU count from the data they already collect. Guests need an updated agent for the agent-side change to take effect."
+  },
+  "canonical/lxd#19271": {
+    "issue": "The monitoring metric for a virtual machine's CPU count was always reported as 0. This PR has no description; it appears to be an earlier version of PR 19272 for the same fix.",
+    "done": "Most likely fills in the CPU count for VMs so the metric reports the real number instead of 0."
+  },
+  "canonical/multipass#5422": {
+    "issue": "When Multipass started up, it checked each virtual machine's disk image for a saved suspend state. If one image was corrupt, that check threw an error that stopped the whole service from starting, so every instance became unusable because of one bad image.",
+    "done": "A failed check now logs a warning and marks just that instance as 'off', so the service and all other instances load normally. Starting the broken instance still shows QEMU's own error about the image."
+  },
+  "canonical/multipass#5421": {
+    "issue": "Setting up the virtual network device (a 'tap' device) for a VM ran three system commands but ignored whether they succeeded. If one failed, the VM start carried on with a broken network device and usually ended in an unexplained timeout.",
+    "done": "Those commands now raise a clear error naming the failed command, which the user sees instead of a timeout. Removing the device logs a warning on failure instead of crashing."
+  },
+  "canonical/multipass#5420": {
+    "issue": "Most Multipass commands print a warning when the configured VM driver is deprecated, but 'snapshot' and 'restore' did not, because they were added after the warning was introduced.",
+    "done": "Added the same deprecation warning to the snapshot and restore commands and updated the tests."
+  },
+  "canonical/multipass#5411": {
+    "issue": "When 'multipass start' failed for several instances at once, the error messages were glued together on one line with nothing between them, making them hard to read.",
+    "done": "The start command now uses the existing helper that puts each error on its own line, and a test checks the output."
+  },
+  "canonical/multipass#5345": {
+    "issue": "The 'a new version is available' notice was printed to normal output, so it got mixed into JSON or YAML output and broke scripts that read those formats.",
+    "done": "The notice is now printed to the error stream (stderr) for all commands that show it, keeping normal output clean. A test checks this for the start command."
+  },
+  "canonical/multipass#5339": {
+    "issue": "On Windows with the Hyper-V HCS back-end, the guest VM's clock could drift or be wrong at boot and after resume, especially without internet time access.",
+    "done": "The VM configuration now uses UTC for the virtual hardware clock and turns on Hyper-V's time-sync service on supported schema versions, with tests updated and a check that older versions are not affected."
+  },
+  "canonical/snapcraft#6477": {
+    "issue": "Snaps of type 'snapd' had no way to declare a 'snapd-info' section in their project file, which was requested so that snapd can carry extra metadata.",
+    "done": "Added the 'snapd-info' key: it is only allowed for 'type: snapd' projects, must be a mapping (not a list, string or empty value), and is written into the generated snap.yaml. Tests cover valid and invalid cases."
+  },
+  "ubuntu/ubuntu-lint#40": {
+    "issue": "A check that warns when a stable-release update version number would break upgrades only looked at versions already published. If a newer version was uploaded but still waiting in the 'Unapproved' review queue, the check wrongly reported a problem.",
+    "done": "The check now also asks Launchpad for Unapproved uploads of the same package in newer releases and compares against those too, with tests for the different cases."
+  },
+  "ubuntu/ubuntu-lint#39": {
+    "issue": "The check for stable-release update version naming skipped 'native' packages (packages with no separate Debian revision number), so their version strings were never validated.",
+    "done": "Added validation for native package versions such as '2.0ubuntu0.1', including multi-release suffixes like 'ubuntu0.24.04.1', reusing the existing suffix logic and adding tests."
+  },
+  "ubuntu/ubuntu-lint#38": {
+    "issue": "The upload hook could not handle older Debian source packages in 'format 1.0', which ship their changes as a .diff.gz file instead of a .debian.tar archive.",
+    "done": "The hook now recognizes .diff.gz files and reads the changelog from them, while keeping existing behavior for the newer format. Tests and sample files were added."
+  },
+  "DOMjudge/domjudge#3859": {
+    "issue": "Firefox remembers form values when you reload a page or go back/forward. Because of this, the Yes/No switches on the jury contest, problem, language and team category pages could show an old value even though the server had sent the new one.",
+    "done": "Added 'autocomplete=\"off\"' to each toggle checkbox so the browser no longer restores a stale state and the switches always match the server value."
+  },
+  "DOMjudge/domjudge#3858": {
+    "issue": "On the jury teams page, the '# contests' column counted contests that are open to all teams on top of those linked to the team directly. A contest that was both open to all and explicitly linked was counted twice.",
+    "done": "The query now collects the open-to-all contest IDs first and merges them into each team's set, so every contest is counted exactly once."
+  },
+  "DOMjudge/domjudge#3782": {
+    "issue": "The Resolver (the tool that replays final standings) was not told when a team was disabled or re-enabled, so it could keep showing a disabled team or fail to show a team again after it was re-enabled.",
+    "done": "Disabling a team now logs a 'delete' event and re-enabling logs a 'create' event for each active contest the team is in, keeping the Resolver in sync. Regression tests were added."
+  },
+  "docling-project/docling#4864": {
+    "issue": "Speaker diarization (telling apart who is speaking in a video) silently stopped working on newer setups. A helper library tried to load an old Python module called pkg_resources, which recent versions of setuptools no longer include, so Docling wrongly reported the video dependencies as missing and returned no speakers.",
+    "done": "Before loading that library, Docling now briefly provides a tiny stand-in for the missing module so the import succeeds, then removes the stand-in. A test checks the import works without pkg_resources, and diarization returns the expected speakers again."
+  },
+  "docling-project/docling#4863": {
+    "issue": "When reading Word and Apple iWork files, a nested (indented) list was attached to the whole surrounding list instead of to the list item just above it. This broke a document rule that lists may only contain list items, and produced invalid HTML (a list placed directly inside another list) on export.",
+    "done": "Both the Word and iWork readers now place a sub-list under the last list item of the enclosing list, matching how the HTML, Markdown, PowerPoint and OpenDocument readers already behave. Tests and reference files were updated, and HTML output is now valid."
+  },
+  "docling-project/docling#4828": {
+    "issue": "For emails whose body was only HTML, special characters like &, < and _ were escaped (turned into codes such as &amp;) when the body was read, and then escaped a second time on export. So the stored text and exports showed doubled-up codes instead of the real characters.",
+    "done": "The HTML body is now converted without escaping, so the stored text holds the real characters and each export escapes them exactly once. A test covers the text item and the Markdown and plain-text exports."
+  },
+  "docling-project/docling#4827": {
+    "issue": "The AsciiDoc reader treated any line starting with a word followed by a dot as a numbered list item. So a sentence starting with an abbreviation like \"Dr.\" or \"Fig.\" became a list item, the abbreviation was lost, and surrounding text was moved out of order.",
+    "done": "The list-marker pattern now accepts only a single letter followed by a dot (like \"a.\" or \"B.\"), matching what Asciidoctor itself does. Lines starting with abbreviations stay normal paragraphs, and lettered lists still work."
+  },
+  "docling-project/docling#4826": {
+    "issue": "When reading JATS scientific-article XML, only the main article body and back matter were converted. Content inside sub-articles and responses, such as published peer reviews and author replies, was skipped entirely.",
+    "done": "The reader now walks each sub-article and response after the main article, placing its content under a heading with its title (and nesting sub-articles inside their parent). It also stops an article without a main body from mistakenly borrowing the body of its first sub-article."
+  },
+  "docling-project/docling#4727": {
+    "issue": "In some Word documents, heading numbers are defined through a linked list style. Docling did not follow that link, so headings lost their numbers, and custom-numbered table captions could lose their numbering or come out as list bullets.",
+    "done": "The Word reader now follows the linked style to find the numbering, keeps heading counters in sync with list counters so chapter numbers are right, and renders custom-numbered captions as normal text. Regression tests were added for each case."
+  },
+  "docling-project/docling#4704": {
+    "issue": "During page layout cleanup, when one section header box sat inside another, text cells were assigned before the overlap was resolved. Both boxes then shrank to fit their own cells, the overlap went undetected, and a two-line title could be split into two separate section headers.",
+    "done": "Overlapping section headers are now merged at the start of each cleanup round, before the boxes are resized, so the outer header is kept and receives the inner one's text. Other kinds of boxes are unaffected, and a regression test was added."
+  },
+  "docling-project/docling#4692": {
+    "issue": "The HTML reader checked the start number of an ordered list with a method that accepts unusual Unicode digits such as the superscript 2, but those cannot be turned into a real integer, so converting the document crashed.",
+    "done": "The check now uses a stricter method that accepts only ordinary decimal digits. Invalid start values are ignored and the list simply starts at 1 instead of failing. A regression test was added."
+  },
+  "docling-project/docling-core#885": {
+    "issue": "When reading the DocLang XML format, custom metadata fields that stored their value only as XML attributes came back empty, and the description, summary and custom metadata on tables was dropped entirely. Custom table metadata was also left out when exporting.",
+    "done": "Attribute values are now read like child elements so they survive a round trip, table metadata heads are applied to the table item, and the exporter now writes the custom metadata head for tables. Tests cover reading, exporting and round-tripping."
+  },
+  "docling-project/docling-core#884": {
+    "issue": "Even with page breaks turned off, a list, paragraph or table that spanned two pages was split into per-page pieces with an internal placeholder marker between them. Nothing replaced that marker when page breaks were off, so it leaked into the output and made the XML invalid.",
+    "done": "With page breaks off, a page-spanning list is now written as one block, and multi-page paragraphs and tables no longer get the marker between their pieces. Output with page breaks on is unchanged, and tests confirm the result validates against the schema."
+  },
+  "docling-project/docling-core#883": {
+    "issue": "When exporting to Markdown, a nested list that had no list item before it was written indented with nothing in front. Markdown reads such a line as a code block (or flattens it), so re-importing turned the sub-list into code or lost its nesting.",
+    "done": "The exporter now hangs such a sub-list on an empty list item of the outer list, which is the only valid Markdown shape for this. For numbered lists the empty item takes the right number so later items stay in sequence. Tests cover the various cases."
+  },
+  "docling-project/docling-pipelines#184": {
+    "issue": "The pipeline could extract and curate entities (such as names, dates or facts pulled from documents) but had no built-in step to store them in a database afterwards.",
+    "done": "Adds a new Entity Storage operator that saves curated entities to DuckDB (including in-memory) or PostgreSQL, handles object and array values, multiple documents and tables, evolving table schemas, and per-document errors. PostgreSQL support was also added to the table storage factory, with unit tests."
+  },
+  "docling-project/docling-pipelines#183": {
+    "issue": "The DCO Advisor workflow (which checks that commits carry a sign-off and comments on the PR) ran on a GitHub trigger called pull_request_target, which GitHub is about to restrict for public repositories.",
+    "done": "The workflow was moved to the safer workflow_run pattern: it runs after the CI pipeline finishes, finds the matching open PR, reads the DCO check result through the GitHub API, and posts the same pass/fail guidance as before, without ever running code from the PR."
+  },
+  "docling-project/docling-pipelines#164": {
+    "issue": "Log messages in the infrastructure utilities were built with f-strings, which format the text even when the log level means it will never be shown. The project's linter rules for this were not enabled.",
+    "done": "Turns on Ruff's logging-format rules project-wide and converts 75 log calls in the infrastructure module to lazy %s formatting, plus one error call to logger.exception. Messages and levels are unchanged; other modules are left for follow-up PRs."
+  },
+  "docling-project/docling-pipelines#141": {
+    "issue": "The repository had scripts to check that each pull request keeps test coverage above a threshold, but CI never ran them, so the thresholds were not actually enforced.",
+    "done": "The CI workflow now runs the Python and frontend per-PR coverage checks after generating coverage, and fetches full Git history so the scripts can find the PR's merge base. The thresholds themselves are unchanged."
+  },
+  "docling-project/docling-pipelines#140": {
+    "issue": "A frequently called method in the chunker operator re-ran its import statements for Markdown document classes every time it was called, adding small unnecessary overhead on a hot path.",
+    "done": "Those imports were moved to the top of the module so they run once. Behaviour is unchanged; other lazy imports for optional or heavy integrations were intentionally kept as they were."
+  },
+  "xberg-io/html-to-markdown#748": {
+    "issue": "If an image's alt text contained blank lines, the generated Markdown image label was invalid.",
+    "done": "Blank-line separators in alt text are now encoded as the &#10; entity, while single newlines are still kept as-is. Regression tests cover single and multiple blank lines and existing multiline behaviour."
+  },
+  "xberg-io/html-to-markdown#721": {
+    "issue": "In the WebAssembly (browser) build, assigning a visitor object to the conversion options consumed it, so the same visitor could not be reused with another options object.",
+    "done": "Upgraded the Alef binding generator so class-typed setters borrow and clone their arguments instead of taking ownership, kept options.visitor when no explicit visitor is passed, and added clear*() methods for optional fields. A regression test covers reusing a visitor across options."
+  },
+  "xberg-io/html-to-markdown#720": {
+    "issue": "Inside table cells, the elements center, dialog, hgroup and search were not on the shared list of block-level elements, so text after them could be glued to the preceding content.",
+    "done": "These elements are now treated as block-level, keeping separation in table cells with and without the br_in_tables option. Regression tests cover both converter tiers, and the changelog was updated."
+  },
+  "xberg-io/html-to-markdown#703": {
+    "issue": "A br tag written on its own line in the HTML source was converted into a paragraph break instead of a hard line break, changing the document's structure.",
+    "done": "The source newline before such a br is no longer emitted separately, so the hard-break marker stays attached to the preceding text. Tests cover both converter tiers, including br inside div, li, blockquote, span, after comments, and consecutive br tags."
+  },
+  "xberg-io/html-to-markdown#701": {
+    "issue": "A br tag on its own source line was turned into a paragraph break rather than a hard line break, because the newline from the source was emitted first and cleanup then read it as a blank line.",
+    "done": "Suppresses that extra newline when the next element is a br, so the hard-break marker stays on the previous line. Six regression tests were added covering top-level, in-div, backslash-style and consecutive br cases."
+  },
+  "xberg-io/html-to-markdown#652": {
+    "issue": "In a task list item (checkbox item), a blockquote appearing right after the checkbox was rendered on the same line as plain text, so the quote formatting was lost.",
+    "done": "The task-item conversion now detects when the first meaningful child is a blockquote and keeps it as a separate, indented block below the checkbox. It also handles br, non-breaking spaces, template and noscript before the blockquote; normal task items are unchanged."
+  },
+  "IBM/mcp-context-forge#7127": {
+    "issue": "The built-in catalog of MCP servers (ready-to-connect tool servers) did not include Parlor.sh.",
+    "done": "Adds a Parlor.sh catalog entry using its public Streamable HTTP endpoint with open (no-login) authentication, a description, tags and a bundled icon. The endpoint was verified live and exposes 8 tools."
+  },
+  "IBM/mcp-context-forge#7124": {
+    "issue": "When converting A2A (agent-to-agent protocol) file parts between protocol versions 0.3 and 1.0, the actual file content could be dropped because the nested file fields were not mapped, and the reverse conversion produced data that 0.3 clients could not validate.",
+    "done": "Adds explicit two-way mapping of file fields (bytes/raw, uri/url, mimeType/mediaType, name/filename) and restores the file kind on the way back. Tests cover file parts nested in messages, and metadata alone no longer makes a part count as a file."
+  },
+  "IBM/mcp-context-forge#7123": {
+    "issue": "The A2A protocol code used the wrong spelling for task states in protocol version 0.3, which expects hyphenated names, so state values did not match what 0.3 clients and servers use.",
+    "done": "Updates the A2A service to use hyphenated v0.3 task state names and adds regression tests for the corrected behaviour. The change is limited to the A2A protocol module and its tests."
+  },
+  "open-metadata/OpenMetadata#35371": {
+    "issue": "Notification alerts set up for the tagCategory source never fired. Classification change events are labelled classification, but alerts matched sources by exact name, so tagCategory never matched and no alert was sent.",
+    "done": "Before matching, the alert source is now translated to the entity type its events actually carry (tagCategory to classification), for both entity events and conversations. Existing saved alerts start working without a migration, and tests were added."
+  },
+  "open-metadata/OpenMetadata#35366": {
+    "issue": "The Python SDK's run_pipeline() always raised an error after successfully triggering a pipeline run, because it tried to read the server's response as an IngestionPipeline object when the server actually returns a different trigger-response object. Callers could not tell success from failure.",
+    "done": "run_pipeline() now parses the response as a PipelineServiceClientResponse and returns it, so callers can read the status code, reason, platform and run ID. Unit tests cover orchestrators that do and do not return a run ID."
+  },
+  "open-metadata/OpenMetadata#34986": {
+    "issue": "Very large data lineage graphs could freeze the browser while the ELK layout engine calculated where to place every node on the main thread.",
+    "done": "Moderately large graphs now use a lighter ELK layout setting, and very large graphs (over 1,000 nodes or 4,000 edges) skip ELK and use a simple fallback layout that positions nodes by lineage depth. Unit tests cover the thresholds and the fallback."
+  },
+  "google/googletest#5095": {
+    "issue": "When GoogleTest was pulled into a project and opened in Visual Studio, the generated project showed the source files but not the public header files, so they were hard to find and browse.",
+    "done": "The build script now attaches the public headers to the gtest library target, so Visual Studio lists them under Header Files."
+  },
+  "google/guava#8742": {
+    "issue": "A thread factory (a helper that creates new threads) is allowed to return nothing, but a factory built with ThreadFactoryBuilder crashes if the one it wraps does that. This rule was not written down anywhere.",
+    "done": "The documentation now states that the wrapped factory must always return a real thread, and a test was added to lock in the current behaviour."
+  },
+  "google/guava#8741": {
+    "issue": "SimpleStatsCounter is described as safe to use from many threads, but it updates its counters one at a time without locking, so a snapshot taken mid-update can be slightly out of sync (for example, a count without its matching timing). This was done on purpose for speed but was not documented.",
+    "done": "Adds documentation explaining that snapshots may be inconsistent while updates are happening, instead of slowing the code down with locks."
+  },
+  "google/guava#8740": {
+    "issue": "ClassPath assumed any dollar sign in a class name meant it was a nested (inner) class, so generated top-level classes with names like $AutoValue_Foo were silently left out of results, and their simple name was reported wrongly.",
+    "done": "Dollar signs at the very start or end of the class name are now ignored when checking for nested classes, so these generated classes are treated as top-level. Tests were added for both checks."
+  },
+  "google/styleguide#1043": {
+    "issue": "The HTML style guide said to only add a type attribute on scripts that are not JavaScript. But type=\"module\" is a JavaScript type that changes how the script loads, so it cannot be dropped like the old text/javascript could.",
+    "done": "Adds type=\"module\" as a documented exception to the rule, with an example."
+  },
+  "google/styleguide#1042": {
+    "issue": "The Java guide's wording about a Javadoc line containing only the leading asterisk was read two ways: some thought a trailing space after the asterisk was allowed, others thought it was forbidden, and style-checking tools disagreed.",
+    "done": "The guide now states clearly that such blank Javadoc lines have no trailing whitespace."
+  },
+  "google/styleguide#1041": {
+    "issue": "A comment in the Python guide's dictionary example said the continued value lines up with the opening delimiter, which readers took to mean the curly brace, when the colon was actually meant.",
+    "done": "The comment now names the colon as the delimiter so the alignment example is unambiguous."
+  },
+  "google/styleguide#1040": {
+    "issue": "In the Emacs C style file, one indentation rule always added a fixed 4 spaces while the others scaled with the basic indent setting. With a 4-space basic indent (Android style), wrapped arguments got 4 spaces but constructor initializer lists got 8, which was inconsistent.",
+    "done": "That rule now uses twice the basic indent instead of a fixed 4, so everything scales together. The default Google style output is unchanged."
+  },
+  "google/styleguide#1039": {
+    "issue": "The JSON guide said property names use \"camel case\", which could mean either lowerCamelCase or UpperCamelCase, even though every example used the lowercase-first form.",
+    "done": "The guide now says explicitly that property names use lower camel case."
+  },
+  "google/styleguide#1038": {
+    "issue": "The Vim guide pointed readers to a help page (:help functions()) that does not exist, so Vim just showed an error.",
+    "done": "The guide now points to the correct help page (:help function-list), which lists Vim's built-in functions by purpose."
+  },
+  "grpc/grpc#43678": {
+    "issue": "In the Python OpenTelemetry plugin, the thread that exports stats held a shared lock while also calling into Python code that needs Python's global interpreter lock. Another thread doing the reverse could cause both to wait on each other forever, freezing the whole program, especially with an asyncio server under load.",
+    "done": "The export thread now quickly moves the pending data into a local copy, releases the shared lock, and only then runs the Python export code, so the two locks are never held at the same time."
+  },
+  "grpc/grpc#43677": {
+    "issue": "grpc's asyncio support still used an old asyncio \"policy\" API that Python marked as deprecated in 3.14 and plans to remove in 3.16, so it would stop working on future Python versions.",
+    "done": "Replaces the deprecated policy calls with the plain asyncio functions that do the same job, keeping identical behaviour across supported Python versions, with a small workaround for a few early 3.10 and 3.11 releases."
+  },
+  "QwenLM/qwen-code#14113": {
+    "issue": "When the main model replied with a 429 (too many requests) error that carried a provider-specific code not on the known list, such as Z.AI's weekly quota exhausted code, Qwen Code treated it as a plain client error and silently skipped the configured fallback models, even though switching providers is exactly what helps with an exhausted quota.",
+    "done": "A 429 with an unrecognized provider code is now allowed to trigger the fallback chain, while still not retrying the same model. Tests were added and the settings docs now note that the unattended-retry setting disables fallbacks."
+  },
+  "QwenLM/qwen-code#14094": {
+    "issue": "Running qwen mcp reconnect with a server name always failed with a message saying the name and --all cannot be used together, because the --all flag had a default value that the argument parser counted as being set. Only --all worked.",
+    "done": "Removes the default value for --all so naming a single server works again, while still rejecting both together and still prompting when neither is given. Parser-level tests were added."
+  },
+  "QwenLM/qwen-code#13169": {
+    "issue": "The daily security audit found high-severity known vulnerabilities in some production dependencies, including the undici HTTP library.",
+    "done": "Updates the affected packages and adds targeted version overrides so patched versions are used, and regenerates the lockfile. Some unrelated advisories from other packages remain for later."
+  },
+  "react/react#37848": {
+    "issue": "The React DevTools browser extension's content script sent a \"hello\" message to every web page twice a second, forever, unless a DevTools backend appeared. Most pages never get one, so any page listening for messages kept receiving these for as long as it stayed open.",
+    "done": "The content script now sends a single hello when it loads, relying on the backend announcing itself when it is injected, so the repeated polling and its bookkeeping are removed."
+  },
+  "react/react#37847": {
+    "issue": "With the React DevTools extension installed, DOM elements that React removed from a component that stayed on screen were kept in memory until the page reloaded, even if DevTools was never opened. DevTools only cleaned up these entries when the whole owning component unmounted.",
+    "done": "DevTools now releases the removed elements (and their children) while processing the parent's deletions, so they can be garbage-collected. A test covers swapping and removing a child element."
+  }
+}
