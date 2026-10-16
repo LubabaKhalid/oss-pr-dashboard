@@ -363,25 +363,17 @@
     chartA.append(mountA); chartB.append(mountB);
     holds.append(el('div', { class: 'charts' }, chartA, chartB));
 
-    // Project chooser
-    holds.append(el('section', { class: 'section' },
-      el('div', { class: 'section-head' }, el('h2', { text: 'Choose a project' }), el('span', { class: 'hint', text: 'Open a project to read what each PR fixed.' })),
-      el('div', { class: 'chooser' }, groups.map((g) =>
-        el('button', { class: 'proj-btn', type: 'button', onclick: () => { location.hash = `#/project/${g.repo}`; } },
-          el('span', { class: 'owner', text: g.owner }),
-          el('span', { class: 'name', text: g.name }),
-          el('span', { class: 'counts' },
-            el('span', null, el('i', { class: 'dot merged' }), `${g.merged.length} merged`),
-            el('span', null, el('i', { class: 'dot open' }), `${g.open.length} open`),
-            el('span', null, el('i', { class: 'dot closed' }), `${g.closed.length} closed`)))))));
-
     // Table
     const table = el('table', null,
       el('thead', null, el('tr', null,
         el('th', { text: 'Project' }), el('th', { class: 'num', text: 'Total' }),
         el('th', { class: 'num', text: 'Merged' }), el('th', { class: 'num', text: 'Open' }), el('th', { class: 'num', text: 'Closed' }),
         el('th', { text: 'Merged PRs' }), el('th', { text: 'Open PRs' }), el('th', { text: 'Closed PRs' }))),
-      el('tbody', null, groups.map((g) => el('tr', null,
+      el('tbody', null, groups.map((g) => el('tr', {
+        class: 'clickable', tabindex: 0, title: `Open ${g.repo}`,
+        onclick: (e) => { if (e.target.closest('a')) return; location.hash = `#/project/${g.repo}`; },
+        onkeydown: (e) => { if (e.key === 'Enter' && !e.target.closest('a')) location.hash = `#/project/${g.repo}`; },
+      },
         el('td', { class: 'proj' }, el('a', { href: `#/project/${g.repo}`, text: g.name }), el('span', { class: 'owner', text: g.owner })),
         el('td', { class: 'num', text: String(g.total) }),
         el('td', { class: 'num', text: String(g.merged.length) }),
@@ -395,7 +387,7 @@
         el('td', { class: 'num', text: String(c.merged) }), el('td', { class: 'num', text: String(c.open) }), el('td', { class: 'num', text: String(c.closed) }),
         el('td', { colspan: 3 }))));
     holds.append(el('section', { class: 'section' },
-      el('div', { class: 'section-head' }, el('h2', { text: 'Dashboard' }), el('span', { class: 'hint', text: 'Links open the PR on GitHub.' })),
+      el('div', { class: 'section-head' }, el('h2', { text: 'Projects' }), el('span', { class: 'hint', text: 'Click a project to see its PRs and what each one fixed. PR numbers open GitHub.' })),
       el('div', { class: 'card table-wrap' }, groups.length ? table : el('div', { class: 'empty', text: 'No pull requests found.' }))));
 
     frag.append(holds);
