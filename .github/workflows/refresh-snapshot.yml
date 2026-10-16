@@ -22,8 +22,10 @@ jobs:
         run: ./scripts/fetch-prs.sh
       - name: Commit if changed
         run: |
-          if git diff --quiet -- data/snapshot.json; then
-            echo "No changes"; exit 0
+          # Only commit when the PR list itself changed, not just the timestamp.
+          if git diff --quiet -- data/snapshot.json || \
+             diff <(git show HEAD:data/snapshot.json | jq -S .prs) <(jq -S .prs data/snapshot.json) >/dev/null; then
+            echo "No PR changes"; git checkout -- data/snapshot.json; exit 0
           fi
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
