@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-16T09:33:02Z",
+  "fetchedAt": "2026-10-16T16:35:56Z",
   "prs": [
     {
       "closed": null,
@@ -123,11 +123,31 @@
     },
     {
       "closed": null,
+      "created": "2026-10-16T15:51:01Z",
+      "draft": false,
+      "number": 19315,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "Cluster: Ignore project cluster group restriction when joining",
+      "url": "https://github.com/canonical/lxd/pull/19315"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-16T15:43:33Z",
+      "draft": false,
+      "number": 19314,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "lxc/storage_volume: Drop volume existence check before importing",
+      "url": "https://github.com/canonical/lxd/pull/19314"
+    },
+    {
+      "closed": "2026-10-16T14:50:40Z",
       "created": "2026-10-16T08:24:13Z",
       "draft": false,
       "number": 19307,
       "repo": "canonical/lxd",
-      "state": "open",
+      "state": "merged",
       "title": "Storage: Check ISO and tarball import target before upload",
       "url": "https://github.com/canonical/lxd/pull/19307"
     },
@@ -530,6 +550,26 @@
       "state": "merged",
       "title": "vim: fix help tag for the list of built-in functions",
       "url": "https://github.com/google/styleguide/pull/1038"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-16T09:50:18Z",
+      "draft": false,
+      "number": 43680,
+      "repo": "grpc/grpc",
+      "state": "open",
+      "title": "[Bazel][Python] Fail early when a .proto path contains '-'",
+      "url": "https://github.com/grpc/grpc/pull/43680"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-16T09:47:53Z",
+      "draft": false,
+      "number": 43679,
+      "repo": "grpc/grpc",
+      "state": "open",
+      "title": "[Python] Implement the List RPC in the health checking servicers",
+      "url": "https://github.com/grpc/grpc/pull/43679"
     },
     {
       "closed": null,
