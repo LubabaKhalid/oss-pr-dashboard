@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-16T16:35:56Z",
+  "fetchedAt": "2026-10-17T10:39:01Z",
   "prs": [
     {
       "closed": null,
@@ -290,6 +290,26 @@
       "state": "open",
       "title": "feat: add snapd-info project key",
       "url": "https://github.com/canonical/snapcraft/pull/6477"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-17T07:10:08Z",
+      "draft": false,
+      "number": 4870,
+      "repo": "docling-project/docling",
+      "state": "open",
+      "title": "fix(md): keep a heading or list item without text from taking a later block's text",
+      "url": "https://github.com/docling-project/docling/pull/4870"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-17T06:54:47Z",
+      "draft": false,
+      "number": 4869,
+      "repo": "docling-project/docling",
+      "state": "open",
+      "title": "fix(odf): keep the speaker notes of ODP slides in the notes layer",
+      "url": "https://github.com/docling-project/docling/pull/4869"
     },
     {
       "closed": null,
