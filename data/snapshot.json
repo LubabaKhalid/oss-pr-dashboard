@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-17T10:39:01Z",
+  "fetchedAt": "2026-10-18T20:38:34Z",
   "prs": [
     {
       "closed": null,
@@ -482,12 +482,12 @@
       "url": "https://github.com/google/googletest/pull/5095"
     },
     {
-      "closed": null,
+      "closed": "2026-10-18T17:41:11Z",
       "created": "2026-10-13T21:51:42Z",
       "draft": false,
       "number": 8742,
       "repo": "google/guava",
-      "state": "open",
+      "state": "closed",
       "title": "Document that `ThreadFactoryBuilder` requires its backing factory to return non-null threads",
       "url": "https://github.com/google/guava/pull/8742"
     },
