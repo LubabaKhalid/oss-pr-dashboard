@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-18T20:38:34Z",
+  "fetchedAt": "2026-10-19T13:07:08Z",
   "prs": [
     {
       "closed": null,
@@ -182,12 +182,12 @@
       "url": "https://github.com/canonical/lxd/pull/19301"
     },
     {
-      "closed": null,
+      "closed": "2026-10-19T07:21:22Z",
       "created": "2026-10-13T14:53:31Z",
       "draft": false,
       "number": 19275,
       "repo": "canonical/lxd",
-      "state": "open",
+      "state": "merged",
       "title": "Storage: Return concise error when backup unpack runs out of space",
       "url": "https://github.com/canonical/lxd/pull/19275"
     },
@@ -302,12 +302,12 @@
       "url": "https://github.com/docling-project/docling/pull/4870"
     },
     {
-      "closed": null,
+      "closed": "2026-10-19T11:18:54Z",
       "created": "2026-10-17T06:54:47Z",
       "draft": false,
       "number": 4869,
       "repo": "docling-project/docling",
-      "state": "open",
+      "state": "merged",
       "title": "fix(odf): keep the speaker notes of ODP slides in the notes layer",
       "url": "https://github.com/docling-project/docling/pull/4869"
     },
@@ -322,12 +322,12 @@
       "url": "https://github.com/docling-project/docling/pull/4864"
     },
     {
-      "closed": null,
+      "closed": "2026-10-19T12:38:23Z",
       "created": "2026-10-16T06:43:21Z",
       "draft": false,
       "number": 4863,
       "repo": "docling-project/docling",
-      "state": "open",
+      "state": "merged",
       "title": "fix(docx,iwork): put a sub-list under the list item above it",
       "url": "https://github.com/docling-project/docling/pull/4863"
     },
@@ -622,22 +622,22 @@
       "url": "https://github.com/open-metadata/OpenMetadata/pull/35371"
     },
     {
-      "closed": null,
+      "closed": "2026-10-19T12:53:58Z",
       "created": "2026-10-13T15:14:02Z",
       "draft": false,
       "number": 35366,
       "repo": "open-metadata/OpenMetadata",
-      "state": "open",
+      "state": "merged",
       "title": "Fixes 34856: Parse run_pipeline trigger response as PipelineServiceClientResponse",
       "url": "https://github.com/open-metadata/OpenMetadata/pull/35366"
     },
     {
-      "closed": null,
+      "closed": "2026-10-19T07:20:22Z",
       "created": "2026-10-09T06:23:23Z",
       "draft": false,
       "number": 34986,
       "repo": "open-metadata/OpenMetadata",
-      "state": "open",
+      "state": "closed",
       "title": "fix(lineage): avoid freezing on very large graphs",
       "url": "https://github.com/open-metadata/OpenMetadata/pull/34986"
     },
