@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-19T13:07:08Z",
+  "fetchedAt": "2026-10-19T22:19:31Z",
   "prs": [
     {
       "closed": null,
@@ -122,22 +122,22 @@
       "url": "https://github.com/canonical/cloud-init/pull/7084"
     },
     {
-      "closed": null,
+      "closed": "2026-10-19T18:55:02Z",
       "created": "2026-10-16T15:51:01Z",
       "draft": false,
       "number": 19315,
       "repo": "canonical/lxd",
-      "state": "open",
+      "state": "merged",
       "title": "Cluster: Ignore project cluster group restriction when joining",
       "url": "https://github.com/canonical/lxd/pull/19315"
     },
     {
-      "closed": null,
+      "closed": "2026-10-19T20:50:24Z",
       "created": "2026-10-16T15:43:33Z",
       "draft": false,
       "number": 19314,
       "repo": "canonical/lxd",
-      "state": "open",
+      "state": "merged",
       "title": "lxc/storage_volume: Drop volume existence check before importing",
       "url": "https://github.com/canonical/lxd/pull/19314"
     },
@@ -172,12 +172,12 @@
       "url": "https://github.com/canonical/lxd/pull/19302"
     },
     {
-      "closed": null,
+      "closed": "2026-10-19T20:57:44Z",
       "created": "2026-10-15T17:48:31Z",
       "draft": false,
       "number": 19301,
       "repo": "canonical/lxd",
-      "state": "open",
+      "state": "merged",
       "title": "Resources: Skip GPUs whose device is gone",
       "url": "https://github.com/canonical/lxd/pull/19301"
     },
@@ -292,12 +292,32 @@
       "url": "https://github.com/canonical/snapcraft/pull/6477"
     },
     {
-      "closed": null,
+      "closed": "2026-10-19T13:55:26Z",
+      "created": "2026-10-19T13:48:46Z",
+      "draft": false,
+      "number": 4894,
+      "repo": "docling-project/docling",
+      "state": "closed",
+      "title": "fix(odf): keep the paragraphs of a list header",
+      "url": "https://github.com/docling-project/docling/pull/4894"
+    },
+    {
+      "closed": "2026-10-19T13:59:56Z",
+      "created": "2026-10-19T13:48:41Z",
+      "draft": false,
+      "number": 4893,
+      "repo": "docling-project/docling",
+      "state": "closed",
+      "title": "fix(md): keep the inline content of setext headings in the heading",
+      "url": "https://github.com/docling-project/docling/pull/4893"
+    },
+    {
+      "closed": "2026-10-19T13:46:19Z",
       "created": "2026-10-17T07:10:08Z",
       "draft": false,
       "number": 4870,
       "repo": "docling-project/docling",
-      "state": "open",
+      "state": "merged",
       "title": "fix(md): keep a heading or list item without text from taking a later block's text",
       "url": "https://github.com/docling-project/docling/pull/4870"
     },
@@ -352,12 +372,12 @@
       "url": "https://github.com/docling-project/docling/pull/4827"
     },
     {
-      "closed": null,
+      "closed": "2026-10-19T15:59:04Z",
       "created": "2026-10-14T14:45:29Z",
       "draft": false,
       "number": 4826,
       "repo": "docling-project/docling",
-      "state": "open",
+      "state": "merged",
       "title": "fix(jats): convert the content of sub-articles",
       "url": "https://github.com/docling-project/docling/pull/4826"
     },
@@ -390,6 +410,36 @@
       "state": "closed",
       "title": "fix(html): handle invalid ordered list start values",
       "url": "https://github.com/docling-project/docling/pull/4692"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-19T17:13:45Z",
+      "draft": false,
+      "number": 904,
+      "repo": "docling-project/docling-core",
+      "state": "open",
+      "title": "fix(file): let a proxy resolve the hostnames of proxied URL sources when opted in",
+      "url": "https://github.com/docling-project/docling-core/pull/904"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-19T17:08:45Z",
+      "draft": false,
+      "number": 903,
+      "repo": "docling-project/docling-core",
+      "state": "open",
+      "title": "fix(doc): drop references to cascade-deleted items and comments in delete_items",
+      "url": "https://github.com/docling-project/docling-core/pull/903"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-19T17:04:55Z",
+      "draft": false,
+      "number": 902,
+      "repo": "docling-project/docling-core",
+      "state": "open",
+      "title": "fix(html): nest a sub-list parented by the list group inside a list item",
+      "url": "https://github.com/docling-project/docling-core/pull/902"
     },
     {
       "closed": null,
@@ -512,12 +562,12 @@
       "url": "https://github.com/google/guava/pull/8740"
     },
     {
-      "closed": null,
+      "closed": "2026-10-19T17:59:29Z",
       "created": "2026-10-13T21:19:39Z",
       "draft": false,
       "number": 1043,
       "repo": "google/styleguide",
-      "state": "open",
+      "state": "closed",
       "title": "html: allow type=\"module\" on scripts",
       "url": "https://github.com/google/styleguide/pull/1043"
     },
@@ -610,6 +660,26 @@
       "state": "open",
       "title": "[Python] Migrate grpc.aio off the deprecated asyncio policy API",
       "url": "https://github.com/grpc/grpc/pull/43677"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-19T14:31:06Z",
+      "draft": false,
+      "number": 35760,
+      "repo": "open-metadata/OpenMetadata",
+      "state": "open",
+      "title": "Fixes 35749: Keep multi-column foreign key column pairing on table update",
+      "url": "https://github.com/open-metadata/OpenMetadata/pull/35760"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-19T13:45:07Z",
+      "draft": false,
+      "number": 35752,
+      "repo": "open-metadata/OpenMetadata",
+      "state": "open",
+      "title": "Fixes 35685: Build the profiler ORM for tables with nested array columns",
+      "url": "https://github.com/open-metadata/OpenMetadata/pull/35752"
     },
     {
       "closed": null,
