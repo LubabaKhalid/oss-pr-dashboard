@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-19T22:19:31Z",
+  "fetchedAt": "2026-10-20T04:45:24Z",
   "prs": [
     {
       "closed": null,
@@ -120,6 +120,36 @@
       "state": "open",
       "title": "feat(nocloud): support platform variables in seed URLs",
       "url": "https://github.com/canonical/cloud-init/pull/7084"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-20T03:14:07Z",
+      "draft": false,
+      "number": 19344,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "Network: Allow OVN network updates when uplink has no IPv6",
+      "url": "https://github.com/canonical/lxd/pull/19344"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-20T03:14:05Z",
+      "draft": false,
+      "number": 19343,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "Network: Report clear error for stale mutual peering",
+      "url": "https://github.com/canonical/lxd/pull/19343"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-20T03:14:03Z",
+      "draft": false,
+      "number": 19342,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "Resources: Report ethtool link modes above 100G",
+      "url": "https://github.com/canonical/lxd/pull/19342"
     },
     {
       "closed": "2026-10-19T18:55:02Z",
