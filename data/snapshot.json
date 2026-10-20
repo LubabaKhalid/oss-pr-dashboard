@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-20T04:45:24Z",
+  "fetchedAt": "2026-10-20T17:00:10Z",
   "prs": [
     {
       "closed": null,
@@ -192,12 +192,12 @@
       "url": "https://github.com/canonical/lxd/pull/19303"
     },
     {
-      "closed": null,
+      "closed": "2026-10-20T16:25:15Z",
       "created": "2026-10-15T17:48:33Z",
       "draft": false,
       "number": 19302,
       "repo": "canonical/lxd",
-      "state": "open",
+      "state": "merged",
       "title": "Instance: Mount VM volume when accessing UEFI vars while stopped",
       "url": "https://github.com/canonical/lxd/pull/19302"
     },
