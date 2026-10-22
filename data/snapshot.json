@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-22T11:47:19Z",
+  "fetchedAt": "2026-10-22T17:07:52Z",
   "prs": [
     {
       "closed": null,
@@ -320,6 +320,26 @@
       "state": "open",
       "title": "feat: add snapd-info project key",
       "url": "https://github.com/canonical/snapcraft/pull/6477"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-22T13:35:41Z",
+      "draft": false,
+      "number": 286,
+      "repo": "cloudflare/foundations",
+      "state": "open",
+      "title": "feat(logging): add a setting to panic when add_fields! overwrites a key",
+      "url": "https://github.com/cloudflare/foundations/pull/286"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-22T13:26:55Z",
+      "draft": false,
+      "number": 285,
+      "repo": "cloudflare/foundations",
+      "state": "open",
+      "title": "feat(telemetry): expose a check for collisions with built-in server routes",
+      "url": "https://github.com/cloudflare/foundations/pull/285"
     },
     {
       "closed": "2026-10-19T13:55:26Z",
