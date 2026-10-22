@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-22T04:39:27Z",
+  "fetchedAt": "2026-10-22T11:47:19Z",
   "prs": [
     {
       "closed": null,
@@ -122,12 +122,12 @@
       "url": "https://github.com/canonical/cloud-init/pull/7084"
     },
     {
-      "closed": null,
+      "closed": "2026-10-22T08:01:42Z",
       "created": "2026-10-20T03:14:07Z",
       "draft": false,
       "number": 19344,
       "repo": "canonical/lxd",
-      "state": "open",
+      "state": "merged",
       "title": "Network: Allow OVN network updates when uplink has no IPv6",
       "url": "https://github.com/canonical/lxd/pull/19344"
     },
