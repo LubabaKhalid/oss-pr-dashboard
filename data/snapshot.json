@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-20T17:00:10Z",
+  "fetchedAt": "2026-10-22T04:39:27Z",
   "prs": [
     {
       "closed": null,
@@ -582,12 +582,12 @@
       "url": "https://github.com/google/guava/pull/8741"
     },
     {
-      "closed": null,
+      "closed": "2026-10-21T22:23:16Z",
       "created": "2026-10-13T21:51:36Z",
       "draft": false,
       "number": 8740,
       "repo": "google/guava",
-      "state": "open",
+      "state": "closed",
       "title": "Treat leading and trailing `$` in a class name as part of a top-level class name in `ClassPath`",
       "url": "https://github.com/google/guava/pull/8740"
     },
