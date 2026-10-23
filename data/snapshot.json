@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-23T11:34:12Z",
+  "fetchedAt": "2026-10-23T17:03:39Z",
   "prs": [
     {
       "closed": null,
@@ -122,6 +122,36 @@
       "url": "https://github.com/canonical/cloud-init/pull/7084"
     },
     {
+      "closed": null,
+      "created": "2026-10-23T15:29:27Z",
+      "draft": false,
+      "number": 19389,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "Doc: Document how LXD connects to a Ceph cluster",
+      "url": "https://github.com/canonical/lxd/pull/19389"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-23T15:17:21Z",
+      "draft": false,
+      "number": 19388,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "Storage: Set parent UUID when copying custom volume from snapshot",
+      "url": "https://github.com/canonical/lxd/pull/19388"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-23T15:10:39Z",
+      "draft": false,
+      "number": 19387,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "snap: Fix parsing of MicroCeph/MicroOVN units for shutdown ordering",
+      "url": "https://github.com/canonical/lxd/pull/19387"
+    },
+    {
       "closed": "2026-10-22T08:01:42Z",
       "created": "2026-10-20T03:14:07Z",
       "draft": false,
@@ -132,12 +162,12 @@
       "url": "https://github.com/canonical/lxd/pull/19344"
     },
     {
-      "closed": null,
+      "closed": "2026-10-23T14:51:46Z",
       "created": "2026-10-20T03:14:05Z",
       "draft": false,
       "number": 19343,
       "repo": "canonical/lxd",
-      "state": "open",
+      "state": "merged",
       "title": "Network: Report clear error for stale mutual peering",
       "url": "https://github.com/canonical/lxd/pull/19343"
     },
