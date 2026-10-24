@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-23T17:03:39Z",
+  "fetchedAt": "2026-10-24T10:54:42Z",
   "prs": [
     {
       "closed": null,
@@ -120,6 +120,16 @@
       "state": "open",
       "title": "feat(nocloud): support platform variables in seed URLs",
       "url": "https://github.com/canonical/cloud-init/pull/7084"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-24T05:32:33Z",
+      "draft": false,
+      "number": 19392,
+      "repo": "canonical/lxd",
+      "state": "open",
+      "title": "Storage: Round root disk size when checking incoming migration",
+      "url": "https://github.com/canonical/lxd/pull/19392"
     },
     {
       "closed": null,
