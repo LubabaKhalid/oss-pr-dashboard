@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-26T12:55:44Z",
+  "fetchedAt": "2026-10-26T22:37:59Z",
   "prs": [
     {
       "closed": null,
@@ -770,6 +770,26 @@
       "state": "open",
       "title": "[Python] Migrate grpc.aio off the deprecated asyncio policy API",
       "url": "https://github.com/grpc/grpc/pull/43677"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-26T18:50:24Z",
+      "draft": false,
+      "number": 36288,
+      "repo": "open-metadata/OpenMetadata",
+      "state": "open",
+      "title": "Fixes 35826: Restore a soft-deleted test case that has incidents",
+      "url": "https://github.com/open-metadata/OpenMetadata/pull/36288"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-26T17:02:52Z",
+      "draft": false,
+      "number": 36283,
+      "repo": "open-metadata/OpenMetadata",
+      "state": "open",
+      "title": "Fixes 36150: Send glossary term assets paging as query parameters in the Java SDK",
+      "url": "https://github.com/open-metadata/OpenMetadata/pull/36283"
     },
     {
       "closed": null,
