@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-26T22:37:59Z",
+  "fetchedAt": "2026-10-27T17:58:17Z",
   "prs": [
     {
       "closed": null,
@@ -382,6 +382,16 @@
       "url": "https://github.com/cloudflare/foundations/pull/285"
     },
     {
+      "closed": null,
+      "created": "2026-10-27T15:10:56Z",
+      "draft": false,
+      "number": 5058,
+      "repo": "docling-project/docling",
+      "state": "open",
+      "title": "docs: document installing docling-slim without RapidOCR",
+      "url": "https://github.com/docling-project/docling/pull/5058"
+    },
+    {
       "closed": "2026-10-19T13:55:26Z",
       "created": "2026-10-19T13:48:46Z",
       "draft": false,
@@ -670,6 +680,36 @@
       "state": "closed",
       "title": "Treat leading and trailing `$` in a class name as part of a top-level class name in `ClassPath`",
       "url": "https://github.com/google/guava/pull/8740"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-27T14:36:29Z",
+      "draft": false,
+      "number": 1063,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "js: explain the rectangle rule",
+      "url": "https://github.com/google/styleguide/pull/1063"
+    },
+    {
+      "closed": "2026-10-27T14:47:52Z",
+      "created": "2026-10-27T14:36:25Z",
+      "draft": false,
+      "number": 1062,
+      "repo": "google/styleguide",
+      "state": "merged",
+      "title": "js: link to a definition of CSP",
+      "url": "https://github.com/google/styleguide/pull/1062"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-27T14:36:22Z",
+      "draft": false,
+      "number": 1061,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "docguide: define CL on first use",
+      "url": "https://github.com/google/styleguide/pull/1061"
     },
     {
       "closed": "2026-10-19T17:59:29Z",
