@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T12:48:28Z",
+  "fetchedAt": "2026-10-28T22:31:50Z",
   "prs": [
     {
       "closed": null,
@@ -382,6 +382,16 @@
       "url": "https://github.com/cloudflare/foundations/pull/285"
     },
     {
+      "closed": null,
+      "created": "2026-10-28T13:21:56Z",
+      "draft": false,
+      "number": 5073,
+      "repo": "docling-project/docling",
+      "state": "open",
+      "title": "fix(layout): keep page header text inside key-value regions in the body",
+      "url": "https://github.com/docling-project/docling/pull/5073"
+    },
+    {
       "closed": "2026-10-28T12:08:58Z",
       "created": "2026-10-27T15:10:56Z",
       "draft": false,
@@ -582,12 +592,12 @@
       "url": "https://github.com/docling-project/docling-pipelines/pull/482"
     },
     {
-      "closed": null,
+      "closed": "2026-10-28T18:54:40Z",
       "created": "2026-10-28T05:56:10Z",
       "draft": false,
       "number": 480,
       "repo": "docling-project/docling-pipelines",
-      "state": "open",
+      "state": "merged",
       "title": "test(postgres): share one PostgreSQL fixture across integration tests",
       "url": "https://github.com/docling-project/docling-pipelines/pull/480"
     },
