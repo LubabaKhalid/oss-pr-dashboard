@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T05:36:49Z",
+  "fetchedAt": "2026-10-28T12:48:28Z",
   "prs": [
     {
       "closed": null,
@@ -382,12 +382,12 @@
       "url": "https://github.com/cloudflare/foundations/pull/285"
     },
     {
-      "closed": null,
+      "closed": "2026-10-28T12:08:58Z",
       "created": "2026-10-27T15:10:56Z",
       "draft": false,
       "number": 5058,
       "repo": "docling-project/docling",
-      "state": "open",
+      "state": "merged",
       "title": "docs: document installing docling-slim without RapidOCR",
       "url": "https://github.com/docling-project/docling/pull/5058"
     },
@@ -573,11 +573,31 @@
     },
     {
       "closed": null,
+      "created": "2026-10-28T10:37:26Z",
+      "draft": false,
+      "number": 482,
+      "repo": "docling-project/docling-pipelines",
+      "state": "open",
+      "title": "feat(ingest): support file events in the OneDrive ingest provider",
+      "url": "https://github.com/docling-project/docling-pipelines/pull/482"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-28T05:56:10Z",
+      "draft": false,
+      "number": 480,
+      "repo": "docling-project/docling-pipelines",
+      "state": "open",
+      "title": "test(postgres): share one PostgreSQL fixture across integration tests",
+      "url": "https://github.com/docling-project/docling-pipelines/pull/480"
+    },
+    {
+      "closed": "2026-10-28T05:45:26Z",
       "created": "2026-10-06T20:39:10Z",
       "draft": false,
       "number": 184,
       "repo": "docling-project/docling-pipelines",
-      "state": "open",
+      "state": "merged",
       "title": "feat(storage): add entity storage operator",
       "url": "https://github.com/docling-project/docling-pipelines/pull/184"
     },
