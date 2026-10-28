@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-27T17:58:17Z",
+  "fetchedAt": "2026-10-28T05:36:49Z",
   "prs": [
     {
       "closed": null,
@@ -682,12 +682,12 @@
       "url": "https://github.com/google/guava/pull/8740"
     },
     {
-      "closed": null,
+      "closed": "2026-10-28T00:37:35Z",
       "created": "2026-10-27T14:36:29Z",
       "draft": false,
       "number": 1063,
       "repo": "google/styleguide",
-      "state": "open",
+      "state": "merged",
       "title": "js: explain the rectangle rule",
       "url": "https://github.com/google/styleguide/pull/1063"
     },
