@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-28T22:31:50Z",
+  "fetchedAt": "2026-10-29T05:43:07Z",
   "prs": [
     {
       "closed": null,
@@ -583,11 +583,31 @@
     },
     {
       "closed": null,
+      "created": "2026-10-29T05:03:04Z",
+      "draft": false,
+      "number": 486,
+      "repo": "docling-project/docling-pipelines",
+      "state": "open",
+      "title": "feat(storage): share one PostgreSQL engine per connection configuration",
+      "url": "https://github.com/docling-project/docling-pipelines/pull/486"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-29T04:43:58Z",
+      "draft": false,
+      "number": 485,
+      "repo": "docling-project/docling-pipelines",
+      "state": "open",
+      "title": "feat(document-sets): add a PostgreSQL document set content store",
+      "url": "https://github.com/docling-project/docling-pipelines/pull/485"
+    },
+    {
+      "closed": "2026-10-29T05:06:46Z",
       "created": "2026-10-28T10:37:26Z",
       "draft": false,
       "number": 482,
       "repo": "docling-project/docling-pipelines",
-      "state": "open",
+      "state": "merged",
       "title": "feat(ingest): support file events in the OneDrive ingest provider",
       "url": "https://github.com/docling-project/docling-pipelines/pull/482"
     },
