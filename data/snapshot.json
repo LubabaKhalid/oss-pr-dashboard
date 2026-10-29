@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T05:43:07Z",
+  "fetchedAt": "2026-10-29T22:43:02Z",
   "prs": [
     {
       "closed": null,
@@ -363,6 +363,16 @@
     },
     {
       "closed": null,
+      "created": "2026-10-29T17:47:20Z",
+      "draft": false,
+      "number": 293,
+      "repo": "cloudflare/foundations",
+      "state": "open",
+      "title": "fix(telemetry): accept memory profiler settings on all platforms",
+      "url": "https://github.com/cloudflare/foundations/pull/293"
+    },
+    {
+      "closed": null,
       "created": "2026-10-22T13:35:41Z",
       "draft": false,
       "number": 286,
@@ -372,12 +382,12 @@
       "url": "https://github.com/cloudflare/foundations/pull/286"
     },
     {
-      "closed": null,
+      "closed": "2026-10-29T17:36:17Z",
       "created": "2026-10-22T13:26:55Z",
       "draft": false,
       "number": 285,
       "repo": "cloudflare/foundations",
-      "state": "open",
+      "state": "merged",
       "title": "feat(telemetry): expose a check for collisions with built-in server routes",
       "url": "https://github.com/cloudflare/foundations/pull/285"
     },
@@ -582,12 +592,12 @@
       "url": "https://github.com/docling-project/docling-core/pull/883"
     },
     {
-      "closed": null,
+      "closed": "2026-10-29T22:34:06Z",
       "created": "2026-10-29T05:03:04Z",
       "draft": false,
       "number": 486,
       "repo": "docling-project/docling-pipelines",
-      "state": "open",
+      "state": "merged",
       "title": "feat(storage): share one PostgreSQL engine per connection configuration",
       "url": "https://github.com/docling-project/docling-pipelines/pull/486"
     },
