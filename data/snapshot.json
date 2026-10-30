@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-29T22:43:02Z",
+  "fetchedAt": "2026-10-30T22:15:47Z",
   "prs": [
     {
       "closed": null,
@@ -362,12 +362,12 @@
       "url": "https://github.com/canonical/snapcraft/pull/6477"
     },
     {
-      "closed": null,
+      "closed": "2026-10-30T15:02:37Z",
       "created": "2026-10-29T17:47:20Z",
       "draft": false,
       "number": 293,
       "repo": "cloudflare/foundations",
-      "state": "open",
+      "state": "merged",
       "title": "fix(telemetry): accept memory profiler settings on all platforms",
       "url": "https://github.com/cloudflare/foundations/pull/293"
     },
@@ -390,6 +390,16 @@
       "state": "merged",
       "title": "feat(telemetry): expose a check for collisions with built-in server routes",
       "url": "https://github.com/cloudflare/foundations/pull/285"
+    },
+    {
+      "closed": null,
+      "created": "2026-10-30T15:34:31Z",
+      "draft": false,
+      "number": 5112,
+      "repo": "docling-project/docling",
+      "state": "open",
+      "title": "fix(vlm): keep cuDNN attention out of Transformers generation on CUDA",
+      "url": "https://github.com/docling-project/docling/pull/5112"
     },
     {
       "closed": null,
@@ -590,6 +600,16 @@
       "state": "open",
       "title": "fix(markdown): hang a sub-list that no item precedes on an empty list item",
       "url": "https://github.com/docling-project/docling-core/pull/883"
+    },
+    {
+      "closed": "2026-10-30T18:39:56Z",
+      "created": "2026-10-30T15:21:27Z",
+      "draft": false,
+      "number": 519,
+      "repo": "docling-project/docling-pipelines",
+      "state": "merged",
+      "title": "fix(extract): fail Docling Serve v2 extraction without primary content",
+      "url": "https://github.com/docling-project/docling-pipelines/pull/519"
     },
     {
       "closed": "2026-10-29T22:34:06Z",
