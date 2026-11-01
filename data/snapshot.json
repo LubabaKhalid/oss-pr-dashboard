@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-10-30T22:15:47Z",
+  "fetchedAt": "2026-11-01T21:58:42Z",
   "prs": [
     {
       "closed": null,
@@ -600,6 +600,16 @@
       "state": "open",
       "title": "fix(markdown): hang a sub-list that no item precedes on an empty list item",
       "url": "https://github.com/docling-project/docling-core/pull/883"
+    },
+    {
+      "closed": null,
+      "created": "2026-11-01T13:37:52Z",
+      "draft": false,
+      "number": 522,
+      "repo": "docling-project/docling-pipelines",
+      "state": "open",
+      "title": "feat: plan full-stack Qdrant VectorDB provider (OpenSpec change)",
+      "url": "https://github.com/docling-project/docling-pipelines/pull/522"
     },
     {
       "closed": "2026-10-30T18:39:56Z",
