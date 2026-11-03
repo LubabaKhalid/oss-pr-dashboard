@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-01T21:58:42Z",
+  "fetchedAt": "2026-11-03T23:17:32Z",
   "prs": [
     {
       "closed": null,
@@ -772,6 +772,36 @@
       "url": "https://github.com/google/guava/pull/8740"
     },
     {
+      "closed": "2026-11-03T16:14:08Z",
+      "created": "2026-11-03T15:05:58Z",
+      "draft": false,
+      "number": 1071,
+      "repo": "google/styleguide",
+      "state": "merged",
+      "title": "js: add an example for @const on legacy var declarations",
+      "url": "https://github.com/google/styleguide/pull/1071"
+    },
+    {
+      "closed": "2026-11-03T19:21:16Z",
+      "created": "2026-11-03T15:05:54Z",
+      "draft": false,
+      "number": 1070,
+      "repo": "google/styleguide",
+      "state": "merged",
+      "title": "js: add an example for template parameter names",
+      "url": "https://github.com/google/styleguide/pull/1070"
+    },
+    {
+      "closed": "2026-11-03T19:25:30Z",
+      "created": "2026-11-03T15:05:50Z",
+      "draft": false,
+      "number": 1069,
+      "repo": "google/styleguide",
+      "state": "merged",
+      "title": "js: add an example for the destructuring tip",
+      "url": "https://github.com/google/styleguide/pull/1069"
+    },
+    {
       "closed": "2026-10-28T00:37:35Z",
       "created": "2026-10-27T14:36:29Z",
       "draft": false,
@@ -932,12 +962,12 @@
       "url": "https://github.com/open-metadata/OpenMetadata/pull/35760"
     },
     {
-      "closed": null,
+      "closed": "2026-11-03T23:12:34Z",
       "created": "2026-10-19T13:45:07Z",
       "draft": false,
       "number": 35752,
       "repo": "open-metadata/OpenMetadata",
-      "state": "open",
+      "state": "merged",
       "title": "Fixes 35685: Build the profiler ORM for tables with nested array columns",
       "url": "https://github.com/open-metadata/OpenMetadata/pull/35752"
     },
