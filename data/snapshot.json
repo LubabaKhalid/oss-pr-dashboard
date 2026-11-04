@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T14:28:32Z",
+  "fetchedAt": "2026-11-04T23:38:15Z",
   "prs": [
     {
       "closed": null,
@@ -792,12 +792,12 @@
       "url": "https://github.com/google/styleguide/pull/1073"
     },
     {
-      "closed": null,
+      "closed": "2026-11-04T18:20:36Z",
       "created": "2026-11-04T11:58:21Z",
       "draft": false,
       "number": 1072,
       "repo": "google/styleguide",
-      "state": "open",
+      "state": "merged",
       "title": "js: add a template literal example for long strings",
       "url": "https://github.com/google/styleguide/pull/1072"
     },
@@ -962,12 +962,12 @@
       "url": "https://github.com/grpc/grpc/pull/43677"
     },
     {
-      "closed": null,
+      "closed": "2026-11-04T18:07:20Z",
       "created": "2026-10-26T18:50:24Z",
       "draft": false,
       "number": 36288,
       "repo": "open-metadata/OpenMetadata",
-      "state": "open",
+      "state": "closed",
       "title": "Fixes 35826: Restore a soft-deleted test case that has incidents",
       "url": "https://github.com/open-metadata/OpenMetadata/pull/36288"
     },
