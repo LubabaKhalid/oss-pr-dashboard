@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-03T23:17:32Z",
+  "fetchedAt": "2026-11-04T14:28:32Z",
   "prs": [
     {
       "closed": null,
@@ -770,6 +770,36 @@
       "state": "closed",
       "title": "Treat leading and trailing `$` in a class name as part of a top-level class name in `ClassPath`",
       "url": "https://github.com/google/guava/pull/8740"
+    },
+    {
+      "closed": null,
+      "created": "2026-11-04T12:02:15Z",
+      "draft": false,
+      "number": 1074,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "js: add an example for annotating empty collections",
+      "url": "https://github.com/google/styleguide/pull/1074"
+    },
+    {
+      "closed": null,
+      "created": "2026-11-04T12:02:11Z",
+      "draft": false,
+      "number": 1073,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "python: state the order of docstring sections",
+      "url": "https://github.com/google/styleguide/pull/1073"
+    },
+    {
+      "closed": null,
+      "created": "2026-11-04T11:58:21Z",
+      "draft": false,
+      "number": 1072,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "js: add a template literal example for long strings",
+      "url": "https://github.com/google/styleguide/pull/1072"
     },
     {
       "closed": "2026-11-03T16:14:08Z",
