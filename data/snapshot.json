@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-04T23:38:15Z",
+  "fetchedAt": "2026-11-05T06:40:29Z",
   "prs": [
     {
       "closed": null,
@@ -102,12 +102,12 @@
       "url": "https://github.com/canonical/cloud-init/pull/7153"
     },
     {
-      "closed": null,
+      "closed": "2026-11-05T00:34:30Z",
       "created": "2026-10-13T16:50:12Z",
       "draft": false,
       "number": 7152,
       "repo": "canonical/cloud-init",
-      "state": "open",
+      "state": "closed",
       "title": "fix(stages): rewrite invalid cached network-config.json",
       "url": "https://github.com/canonical/cloud-init/pull/7152"
     },
@@ -772,12 +772,12 @@
       "url": "https://github.com/google/guava/pull/8740"
     },
     {
-      "closed": null,
+      "closed": "2026-11-05T03:50:02Z",
       "created": "2026-11-04T12:02:15Z",
       "draft": false,
       "number": 1074,
       "repo": "google/styleguide",
-      "state": "open",
+      "state": "merged",
       "title": "js: add an example for annotating empty collections",
       "url": "https://github.com/google/styleguide/pull/1074"
     },
