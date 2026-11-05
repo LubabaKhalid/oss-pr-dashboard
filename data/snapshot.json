@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-05T06:40:29Z",
+  "fetchedAt": "2026-11-05T19:54:58Z",
   "prs": [
     {
       "closed": null,
@@ -772,6 +772,26 @@
       "url": "https://github.com/google/guava/pull/8740"
     },
     {
+      "closed": null,
+      "created": "2026-11-05T10:50:04Z",
+      "draft": false,
+      "number": 1076,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "python: add an example for the Yields: section",
+      "url": "https://github.com/google/styleguide/pull/1076"
+    },
+    {
+      "closed": null,
+      "created": "2026-11-05T10:48:34Z",
+      "draft": false,
+      "number": 1075,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "html: keep the <html> start tag when setting lang",
+      "url": "https://github.com/google/styleguide/pull/1075"
+    },
+    {
       "closed": "2026-11-05T03:50:02Z",
       "created": "2026-11-04T12:02:15Z",
       "draft": false,
@@ -858,7 +878,7 @@
       "number": 1061,
       "repo": "google/styleguide",
       "state": "open",
-      "title": "docguide: define CL on first use",
+      "title": "docguide: say \"change\" instead of \"CL\"",
       "url": "https://github.com/google/styleguide/pull/1061"
     },
     {
