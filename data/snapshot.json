@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-05T19:54:58Z",
+  "fetchedAt": "2026-11-06T06:36:50Z",
   "prs": [
     {
       "closed": null,
@@ -92,12 +92,12 @@
       "url": "https://github.com/QwenLM/qwen-code/pull/13169"
     },
     {
-      "closed": null,
+      "closed": "2026-11-06T00:37:41Z",
       "created": "2026-10-13T17:04:11Z",
       "draft": false,
       "number": 7153,
       "repo": "canonical/cloud-init",
-      "state": "open",
+      "state": "closed",
       "title": "fix(netplan): do not enable DHCPv6 for ipv6_slaac subnets",
       "url": "https://github.com/canonical/cloud-init/pull/7153"
     },
