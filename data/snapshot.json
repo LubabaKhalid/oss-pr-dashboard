@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-06T06:36:50Z",
+  "fetchedAt": "2026-11-08T13:18:45Z",
   "prs": [
     {
       "closed": null,
@@ -12,12 +12,12 @@
       "url": "https://github.com/DOMjudge/domjudge/pull/3859"
     },
     {
-      "closed": null,
+      "closed": "2026-11-08T12:05:08Z",
       "created": "2026-10-13T12:23:00Z",
       "draft": false,
       "number": 3858,
       "repo": "DOMjudge/domjudge",
-      "state": "open",
+      "state": "merged",
       "title": "Fix double counting of open-to-all contests on jury teams page",
       "url": "https://github.com/DOMjudge/domjudge/pull/3858"
     },
