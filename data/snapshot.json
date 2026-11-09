@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-08T13:18:45Z",
+  "fetchedAt": "2026-11-09T06:19:17Z",
   "prs": [
     {
       "closed": null,
@@ -112,12 +112,12 @@
       "url": "https://github.com/canonical/cloud-init/pull/7152"
     },
     {
-      "closed": null,
+      "closed": "2026-11-09T00:34:25Z",
       "created": "2026-09-10T17:40:53Z",
       "draft": false,
       "number": 7084,
       "repo": "canonical/cloud-init",
-      "state": "open",
+      "state": "closed",
       "title": "feat(nocloud): support platform variables in seed URLs",
       "url": "https://github.com/canonical/cloud-init/pull/7084"
     },
