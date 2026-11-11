@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-09T06:19:17Z",
+  "fetchedAt": "2026-11-11T14:14:46Z",
   "prs": [
     {
       "closed": null,
@@ -770,6 +770,36 @@
       "state": "closed",
       "title": "Treat leading and trailing `$` in a class name as part of a top-level class name in `ClassPath`",
       "url": "https://github.com/google/guava/pull/8740"
+    },
+    {
+      "closed": null,
+      "created": "2026-11-11T08:37:42Z",
+      "draft": false,
+      "number": 1079,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "ts: fix the link to the rationale for not mixing key types",
+      "url": "https://github.com/google/styleguide/pull/1079"
+    },
+    {
+      "closed": "2026-11-11T14:12:09Z",
+      "created": "2026-11-11T08:37:38Z",
+      "draft": false,
+      "number": 1078,
+      "repo": "google/styleguide",
+      "state": "merged",
+      "title": "js: fix the dead Closure Library link",
+      "url": "https://github.com/google/styleguide/pull/1078"
+    },
+    {
+      "closed": null,
+      "created": "2026-11-11T08:37:35Z",
+      "draft": false,
+      "number": 1077,
+      "repo": "google/styleguide",
+      "state": "open",
+      "title": "r: say that the Tidyverse guide applies to anything not covered",
+      "url": "https://github.com/google/styleguide/pull/1077"
     },
     {
       "closed": null,
