@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-11T14:14:46Z",
+  "fetchedAt": "2026-11-13T19:37:52Z",
   "prs": [
     {
       "closed": null,
@@ -772,12 +772,12 @@
       "url": "https://github.com/google/guava/pull/8740"
     },
     {
-      "closed": null,
+      "closed": "2026-11-13T13:46:46Z",
       "created": "2026-11-11T08:37:42Z",
       "draft": false,
       "number": 1079,
       "repo": "google/styleguide",
-      "state": "open",
+      "state": "closed",
       "title": "ts: fix the link to the rationale for not mixing key types",
       "url": "https://github.com/google/styleguide/pull/1079"
     },
