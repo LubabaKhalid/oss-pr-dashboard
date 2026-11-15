@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-13T19:37:52Z",
+  "fetchedAt": "2026-11-15T18:48:01Z",
   "prs": [
     {
       "closed": null,
@@ -82,12 +82,12 @@
       "url": "https://github.com/QwenLM/qwen-code/pull/14094"
     },
     {
-      "closed": null,
+      "closed": "2026-11-15T08:53:34Z",
       "created": "2026-10-01T16:56:06Z",
       "draft": false,
       "number": 13169,
       "repo": "QwenLM/qwen-code",
-      "state": "open",
+      "state": "merged",
       "title": "chore(deps): update vulnerable dependencies",
       "url": "https://github.com/QwenLM/qwen-code/pull/13169"
     },
