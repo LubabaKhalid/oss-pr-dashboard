@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-15T18:48:01Z",
+  "fetchedAt": "2026-11-19T20:30:31Z",
   "prs": [
     {
       "closed": null,
@@ -462,12 +462,12 @@
       "url": "https://github.com/docling-project/docling/pull/4869"
     },
     {
-      "closed": null,
+      "closed": "2026-11-19T13:42:57Z",
       "created": "2026-10-16T06:43:27Z",
       "draft": false,
       "number": 4864,
       "repo": "docling-project/docling",
-      "state": "open",
+      "state": "merged",
       "title": "fix(video): keep speaker diarization working without pkg_resources",
       "url": "https://github.com/docling-project/docling/pull/4864"
     },
