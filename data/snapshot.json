@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-19T20:30:31Z",
+  "fetchedAt": "2026-11-24T22:22:32Z",
   "prs": [
     {
       "closed": null,
@@ -1022,22 +1022,22 @@
       "url": "https://github.com/open-metadata/OpenMetadata/pull/36288"
     },
     {
-      "closed": null,
+      "closed": "2026-11-24T14:37:19Z",
       "created": "2026-10-26T17:02:52Z",
       "draft": false,
       "number": 36283,
       "repo": "open-metadata/OpenMetadata",
-      "state": "open",
+      "state": "merged",
       "title": "Fixes 36150: Send glossary term assets paging as query parameters in the Java SDK",
       "url": "https://github.com/open-metadata/OpenMetadata/pull/36283"
     },
     {
-      "closed": null,
+      "closed": "2026-11-24T14:33:56Z",
       "created": "2026-10-19T14:31:06Z",
       "draft": false,
       "number": 35760,
       "repo": "open-metadata/OpenMetadata",
-      "state": "open",
+      "state": "closed",
       "title": "Fixes 35749: Keep multi-column foreign key column pairing on table update",
       "url": "https://github.com/open-metadata/OpenMetadata/pull/35760"
     },
