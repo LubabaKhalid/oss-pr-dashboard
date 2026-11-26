@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-24T22:22:32Z",
+  "fetchedAt": "2026-11-26T21:27:37Z",
   "prs": [
     {
       "closed": null,
@@ -592,12 +592,12 @@
       "url": "https://github.com/docling-project/docling-core/pull/884"
     },
     {
-      "closed": null,
+      "closed": "2026-11-26T14:52:30Z",
       "created": "2026-10-16T08:47:40Z",
       "draft": false,
       "number": 883,
       "repo": "docling-project/docling-core",
-      "state": "open",
+      "state": "merged",
       "title": "fix(markdown): hang a sub-list that no item precedes on an empty list item",
       "url": "https://github.com/docling-project/docling-core/pull/883"
     },
