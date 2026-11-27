@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-26T21:27:37Z",
+  "fetchedAt": "2026-11-27T21:12:48Z",
   "prs": [
     {
       "closed": null,
@@ -582,12 +582,12 @@
       "url": "https://github.com/docling-project/docling-core/pull/885"
     },
     {
-      "closed": null,
+      "closed": "2026-11-27T14:24:55Z",
       "created": "2026-10-16T08:48:24Z",
       "draft": false,
       "number": 884,
       "repo": "docling-project/docling-core",
-      "state": "open",
+      "state": "merged",
       "title": "fix(doclang): don't leak the page-break sentinel when add_page_break is off",
       "url": "https://github.com/docling-project/docling-core/pull/884"
     },
