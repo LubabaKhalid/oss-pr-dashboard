@@ -1,5 +1,5 @@
 {
-  "fetchedAt": "2026-11-27T21:12:48Z",
+  "fetchedAt": "2026-11-28T07:42:07Z",
   "prs": [
     {
       "closed": null,
@@ -72,12 +72,12 @@
       "url": "https://github.com/QwenLM/qwen-code/pull/14113"
     },
     {
-      "closed": null,
+      "closed": "2026-11-28T00:44:41Z",
       "created": "2026-10-13T17:24:11Z",
       "draft": false,
       "number": 14094,
       "repo": "QwenLM/qwen-code",
-      "state": "open",
+      "state": "closed",
       "title": "fix(cli): accept a server name in qwen mcp reconnect",
       "url": "https://github.com/QwenLM/qwen-code/pull/14094"
     },
